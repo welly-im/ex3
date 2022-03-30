@@ -1,23 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import Search from './pages/search';
+import { ClassSearch } from './pages/search/class';
+
+// const giphy = new GiphyFetch(process.env.REACT_APP_GIPHY_KEY)
 
 function App() {
+
+  //https://api.giphy.com/v1/stickers/search?api_key=${giphy}&q=${text}&limit=12&offset=0&rating=G&lang=en
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  {/* <Search /> */}
+
+    <ClassSearch />
+    
     </div>
   );
 }
